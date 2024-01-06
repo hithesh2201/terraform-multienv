@@ -1,4 +1,4 @@
-- name: workspace configuration
+- name: workspace configuration for multi environments
   tasks:
   - name: to use workspace approach one bucket and one dynamo table required. we should keep that in provider.tf
     code:
