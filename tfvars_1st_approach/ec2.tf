@@ -4,6 +4,6 @@ resource "aws_instance" "ec2" {
     instance_type=each.value
     vpc_security_group_ids= ["sg-0f0225d73ad9227cc"]
     tags = {
-      Name= "each.key"
+      Name= each.key
     }
 }
