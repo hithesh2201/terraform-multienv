@@ -17,8 +17,11 @@ resource "aws_instance" "ec2" {
 
   provisioner "remote-exec" {
     inline = [
-     "sudo yum install nginx -y",
-     "sudo systemctl start nginx"
+        "sudo yum install ansible -y",
+        "git clone https://github.com/hithesh2201/ansible.git ",
+        "cd ansible",
+        "ansible-playbook 01-playbook.yaml"
+
     ]
   }
 }
