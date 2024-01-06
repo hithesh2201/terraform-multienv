@@ -1,0 +1,18 @@
+- name: workspace configuration
+  tasks:
+  - name: to use workspace approach one bucket and one dynamo table required. we should keep that in provider.tf
+    code:
+        #       backend "s3" {
+        #   bucket = "tfstate-hiteshshop"     # for collabartion and security reasons we are going to use s3 and dynamodb
+        #   key    = "workspace"
+        #   region = "us-east-1"
+        #   dynamodb_table = "test"
+        # }
+  - name: by default we have one "workspace"
+  
+  - name: we should create how many env according to our requirement
+    code: terraform workspace new dev
+  
+  - name: after switching to dev do terraform init , then plan and apply
+  
+  - name: above two steps will repeat for every env  
