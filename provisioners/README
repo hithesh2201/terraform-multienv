@@ -1,0 +1,2 @@
+1.provisioners we will only use for ec2-instance
+2. to integrate terrafrom(Iaac) and ansible(configuration management) this provisioners will be used
